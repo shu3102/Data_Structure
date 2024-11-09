@@ -1,0 +1,61 @@
+Time Complexity:
+    Measures of how the running time of the algorithm increases with the size of the input data.
+
+Here’s a summary of Big O, Big Theta, and Big Omega time complexities, which are used to describe the runtime performance of algorithms in terms of their growth rates.
+
+1. Big O Notation (O)
+    Definition: Big O notation provides an upper bound on the time complexity, describing the worst-case scenario. It tells us the maximum time an algorithm will take relative to the input size.
+    
+    Use Case: When we want to ensure that an algorithm won’t exceed a certain runtime.
+    
+    Example: If an algorithm’s runtime is 𝑂(𝑛^2), it means the time will grow at most as fast as 𝑛^2 for large 𝑛
+
+    Common Big O complexities:
+    Big O Notation
+        O(1) -> constant time
+        O(log n) -> Logarithmic time
+        O(n) ->     Linear Time
+        O(n log n) ->   linearithmic time
+        O(n^2) -> Quadratic time
+        O(2^n) -> exponential time
+        O(n!) -> Factorial time
+
+2. Big Theta Notation (Θ)
+    Definition: Big Theta notation provides a tight bound on the time complexity, describing both the upper and lower bounds. It represents the exact growth rate of an algorithm.
+    
+    Use Case: When we know the algorithm’s runtime behaves consistently around a specific rate of growth.
+    
+    Example: If an algorithm is Θ(nlogn), then for large inputs, the runtime will always scale proportionally to nlogn, neither more nor less.
+
+    Example of Big Theta complexities:
+            Θ(1): Constant time
+            Θ(n): Linear time
+            Θ(n^2 ): Quadratic time
+    Any algorithm with a Θ complexity has that growth rate exactly, for both best and worst cases.
+
+
+3. Big Omega Notation (Ω)
+    Definition: Big Omega notation provides a lower bound on the time complexity, describing the best-case scenario. It tells us the minimum time an algorithm will take for some input size.
+    
+    Use Case: To show the best performance possible for an algorithm, or to show that an algorithm won’t perform faster than a certain rate.
+    
+    Example: If an algorithm’s runtime is Ω(n), it means that in the best-case scenario, the runtime will grow at least as fast as n.
+    
+    Common Big Omega complexities:
+        Ω(1): Constant time
+        Ω(logn): Logarithmic time
+        Ω(n): Linear time
+        Ω(n^2 ): Quadratic time
+
+Quick Summary Table
+Notation	Description	Usage	Example 
+Big O (O)	Upper bound (worst-case)	Ensures runtime won’t exceed	O(n^2) for quadratic complexity
+Big Theta (Θ)	Tight bound (exact rate)	Shows average case or consistent rate	Θ(nlogn) for merge sort
+Big Omega (Ω)	Lower bound (best-case)	Shows minimum possible runtime	Ω(n) for linear time best case
+
+
+Relationship Between Notations
+    1. For an algorithm with time complexity Θ(n), it is also O(n) and Ω(n) because Θ implies both an upper and lower bound.
+    2. Big O and Big Omega bounds do not imply tightness; they only provide worst-case and best-case assurances respectively.
+    
+Understanding these notations helps in selecting algorithms that meet performance requirements for specific cases, such as large data inputs or real-time processing scenarios.
