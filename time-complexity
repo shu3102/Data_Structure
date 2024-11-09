@@ -1,0 +1,11 @@
+Time Complexity:
+    Measures of how the running time of the algorithm increases with the size of the input data.
+
+Big O Notation
+    O(1) -> constant time
+    O(log n) -> Logarithmic time
+    O(n) ->     Linear Time
+    O(n log n) ->   linearithmic time
+    O(n^2) -> Quadratic time
+    O(2^n) -> exponential time
+    O(n!) -> Factorial time
