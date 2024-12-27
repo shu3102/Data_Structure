@@ -62,7 +62,6 @@ public class LinkedList {
         if(head == null) {
             this.head = temp;
             this.tail = temp;
-            this.length = 1;
         }
         else {
             tail.next = temp;
@@ -187,5 +186,20 @@ public class LinkedList {
         }
     }
 
+    public Node findMiddleNode() {
+        if(head == null) return null;
+        
+        Node first = head;
+        Node second = head;
+        
+        while(second.next != null && second.next.next != null) {
+            first = first.next;
+            second = second.next.next;
+        }
+        if(second.next != null) {
+            return first.next;
+        }
+        return first;
+    }
 
 }
