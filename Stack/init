@@ -1,0 +1,86 @@
+#Stack Overview
+
+A stack is a linear data structure that follows the Last In, First Out (LIFO) principle, meaning that the last element added to the stack is the first one to be removed. Stacks are dynamic in size and are widely used for solving problems like recursion, backtracking, and expression evaluation.
+
+##Key Characteristics
+
+LIFO Principle: The last element pushed onto the stack is the first one to be popped off.
+
+Dynamic Size: Stacks can grow or shrink dynamically depending on the operations performed.
+
+Restricted Access: Elements can only be added or removed from one end, called the top of the stack.
+
+##Basic Operations
+
+Push: Adds an element to the top of the stack.
+
+If the stack is implemented using an array, check for overflow before adding.
+
+Pop: Removes and returns the top element of the stack.
+
+If the stack is empty, underflow occurs.
+
+Peek/Top: Returns the top element of the stack without removing it.
+
+IsEmpty: Checks whether the stack is empty.
+
+IsFull (optional): Checks whether the stack is full (used in array-based implementations).
+
+##Types of Stacks
+
+Static Stack
+
+Implemented using arrays.
+
+Size is fixed and needs to be defined at initialization.
+
+Dynamic Stack
+
+Implemented using linked lists or dynamic arrays.
+
+Size can be adjusted during runtime.
+
+##Applications of Stacks
+
+Expression Evaluation: Stacks are used to evaluate postfix expressions and convert infix to postfix expressions.
+
+Backtracking: Used in solving puzzles like the maze problem, N-Queens problem, and recursive function calls.
+
+Undo Operations: Applications like text editors use stacks to implement undo functionality.
+
+Parsing: Used in compilers for syntax checking and parsing expressions.
+
+Function Call Management: The call stack in programming languages uses a stack to manage function calls.
+
+Balancing Symbols: Stacks help check for balanced parentheses, brackets, and braces in code.
+
+Reversing Data: Useful for reversing strings, lists, or other data structures.
+
+##Advantages of Stacks
+
+Simplicity: Easy to implement and use.
+
+Efficient Operations: Push and pop operations have O(1) time complexity.
+
+Versatility: Useful in numerous algorithmic problems.
+
+##Disadvantages of Stacks
+
+Limited Access: Only the top element can be accessed directly.
+
+Overflow/Underflow: Array-based stacks can lead to overflow if the size is exceeded, and popping an empty stack leads to underflow.
+
+Memory Overhead: Dynamic stacks (using linked lists) consume extra memory for storing pointers.
+
+
+
+##Summary Table
+
+Operation Time Complexity (Array) Time Complexity (Linked List)
+
+Push    O(1)        O(1)
+Pop     O(1)        O(1)
+Peek    O(1)        O(1)
+IsEmpty O(1)        O(1)
+
+Stacks provide a powerful and versatile tool for solving various computational problems, but their restricted access and potential memory overhead should be considered when deciding on their usage.

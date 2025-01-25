@@ -1,0 +1,90 @@
+#Queue Overview
+
+A queue is a linear data structure that follows the First In, First Out (FIFO) principle, meaning that the first element added to the queue is the first one to be removed. Queues are dynamic in size and are widely used in scenarios requiring sequential processing of tasks.
+
+##Key Characteristics
+
+FIFO Principle: The first element enqueued is the first one to be dequeued.
+
+Dynamic Size: Queues can grow or shrink dynamically depending on the operations performed.
+
+Restricted Access: Elements can only be added at the rear (enqueue) and removed from the front (dequeue).
+
+##Basic Operations
+
+Enqueue: Adds an element to the rear of the queue.
+
+If the queue is implemented using an array, check for overflow before adding.
+
+Dequeue: Removes and returns the front element of the queue.
+
+If the queue is empty, underflow occurs.
+
+Peek/Front: Returns the front element of the queue without removing it.
+
+IsEmpty: Checks whether the queue is empty.
+
+IsFull (optional): Checks whether the queue is full (used in array-based implementations).
+
+##Types of Queues
+
+Simple Queue
+
+Basic queue that follows the FIFO principle.
+
+Circular Queue
+
+The rear pointer connects back to the front when the queue is full, forming a circle.
+
+Efficient use of memory by reusing empty slots.
+
+Priority Queue
+
+Each element is assigned a priority, and elements with higher priority are dequeued first.
+
+Deque (Double-Ended Queue)
+
+Elements can be added or removed from both ends of the queue.
+
+##Applications of Queues
+
+Task Scheduling: Used in operating systems for managing processes.
+
+Data Buffering: Queues are used in IO buffers, printers, and call centers.
+
+Breadth-First Search (BFS): Used in graph and tree traversal algorithms.
+
+CPU Scheduling: Round-robin scheduling uses queues for managing tasks.
+
+Order Processing: Managing requests in sequential order, such as customer service systems.
+
+Simulations: Modeling real-world systems like traffic management.
+
+##Advantages of Queues
+
+Simplicity: Easy to implement and use.
+
+Efficient Operations: Enqueue and dequeue operations have O(1) time complexity in linked list-based implementations.
+
+Versatility: Useful in various algorithmic and real-world applications.
+
+##Disadvantages of Queues
+
+Limited Access: Only the front and rear elements can be accessed directly.
+
+Overflow/Underflow: Array-based queues can lead to overflow if the size is exceeded, and dequeuing an empty queue leads to underflow.
+
+Memory Overhead: Dynamic queues (using linked lists) consume extra memory for storing pointers.
+
+
+
+##Summary Table
+
+Operation   Time Complexity (Array) Time Complexity (Linked List)
+Enqueue     O(1)        O(1)
+Dequeue     O(1)        O(1)
+Peek        O(1)        O(1)
+IsEmpty     O(1)        O(1)
+
+Queues provide an efficient and organized way to process elements sequentially, making them ideal for a variety of computational and real-world problems.
+
